@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<div class="container py-5">
+  <h1 class="fw-bold">Contact Manager</h1>
+  <main class="content">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="formContainer">
+          <h2 class="textForm">Add Contact</h2>
+          <form class="AllForm">
+            <input type="text" id="name" class="form-control" placeholder="Name" required>
+            <div class="alert alert-danger d-none" role="alert" id="nameError">
+              Name must be 2-50 characters long and contain only letters.
+            </div>
+            <input type="text" id="phone" class="form-control" placeholder="Phone" required>
+            <div class="alert alert-danger d-none" role="alert"  id="PhoneError">
+              Phone number must be 10-15 digits and can include a '+' at the start.
+            </div>
+            <input type="email" id="email" class="form-control" placeholder="Email" required>
+            <div class="alert alert-danger d-none" role="alert"  id="emailError">
+              Please enter a valid email address.
+            </div>
+            <button type="button" class="btn btn-primary disabled" id="buttonAdd">Add</button>
+            <button type="button" class="btn btn-primary d-none" id="buttonUpdate">Update</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="contactContainer">
+          <h2 class="textForm">Contact List</h2>
+          <input type="text" id="search" class="form-control mb-3" placeholder="Search Contact" required>
+          <div class="tableContainer">
+            <table id="tableContact" class="rounded-5 border">
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Phone</td>
+                  <td>Email</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody id="bodyTable">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

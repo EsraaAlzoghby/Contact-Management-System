@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .formContainer, .contactContainer {
+        padding: 15px;
+    }
+    .textForm {
+        font-size: 1.2rem;
+    }
+    .actionButton button {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .formContainer, .contactContainer {
+        padding: 10px;
+    }
+    .textForm {
+        font-size: 1rem;
+    }
+    .actionButton button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
